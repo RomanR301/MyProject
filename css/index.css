@@ -1,0 +1,11 @@
+.main_flex {
+    display: flex;
+}
+
+.header-images img {
+    width: 100px;
+}
+
+.portfolio-images img{
+    width: 100px;
+}
