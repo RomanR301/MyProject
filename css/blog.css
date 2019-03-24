@@ -1,0 +1,13 @@
+* {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.blog-info svg {
+    width: 15px;
+    height: 15px;
+}
+
+.socials svg {
+    width: 20px;
+    height: 20px;
+}

@@ -1,5 +1,5 @@
-.main_flex {
-    display: flex;
+* {
+    font-family: 'Libre Baskerville', serif;
 }
 
 .header-images img {
