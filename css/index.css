@@ -75,7 +75,7 @@ time, mark, audio, video {
 
 
 @media only screen and ( min-device-width: 320px ) 
-and (max-device-width: 560px ) {
+and (max-device-width: 480px ), {
     .header-nav,
     .header-phone__number,
     .contact-me-btn,
@@ -85,10 +85,10 @@ and (max-device-width: 560px ) {
     .header-image-7 { 
         display: none;
     }
-    
-    .header-grid-container img {
+ 
+	.header-grid-container img {
  		 width: 100%;
- 		 border-radius: 50% 0 0 0;
+ 		 border-radius: 40% 0 0 0;
     }
     
     .header-grid-container {
@@ -99,63 +99,61 @@ and (max-device-width: 560px ) {
     }
     
     .header-title {
-    	grid-column: 1 / 11;
+    	grid-column: 2 / 11;
     	grid-row: 2 / 11;
+    	z-index: 4;
     }
     
     .header-title__button {
-    	grid-column: 1 / 2;
-    	grid-row: 3 /4;
+    	grid-column: 2 / 2;
+    	grid-row: 4 /5;
     }
     
     .header-image-1 {
-    	grid-row:  6/11;
- 		grid-column: 3/11;
+    	grid-row: 7/11;
+    	grid-column: 3/11;
     }
     
     .header-image-4 {
-    	grid-row: 4/9;
-		grid-column: 5/11;
+    	grid-row: 5/9;
+    	grid-column: 5/11;
 		z-index: 1;
     }
     
     .header-image-5 {
-    	grid-row: 2/5;
-		grid-column: 8/11;
+    	grid-row: 3/6;
+    	grid-column: 8/11;
 		z-index: 2;
     }
 }
 
-/*.header-top {*/
-/*	display: flex;*/
-/*	align-items: center;*/
-/*	margin-top: 20px;*/
-/*}*/
+.header-top {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
 
-/*.header-phone {*/
-/*	display: flex;*/
-/*	align-items: center;*/
-/*}*/
+.header-phone {
+	display: flex;
+	align-items: center;
+}
 
-/*.header-phone__number {*/
-/*	padding-left: 5px;*/
-/*}*/
+.header-phone__img {
+	padding-right: 8px;
+}
 
-/*.header-nav {*/
-/*	display: flex;*/
-/*	width: 40%;*/
-/*	justify-content: space-between;*/
-/*}*/
+.header-nav a {
+	
+}
 
-/*.header-nav a {*/
-/*	text-decoration: none;*/
-/*	color: #888888;*/
-/*}*/
+.header-nav a {
+	text-decoration: none;
+	color: #888888;
+}
 
-/*.header-nav a:hover {*/
-/*	text-decoration: underline;*/
-/*}*/
-
+.header-nav a:hover {
+	text-decoration: underline;
+}
 
 
 
