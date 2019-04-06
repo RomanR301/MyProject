@@ -124,10 +124,12 @@ time, mark, audio, video {
 }
 
 
+
+
 @media (min-width: 320px) {
 	.header-nav,
     .header-phone__number,
-    .contact-me-btn,
+    .header-contact-me-btn,
     .header-image-2,
     .header-image-3,
     .header-image-6,
@@ -135,7 +137,7 @@ time, mark, audio, video {
       display: none;
 	}
 	
-	.header {
+	header {
 		height: 100vh;
 	}
 	
@@ -189,6 +191,224 @@ time, mark, audio, video {
     	grid-column: 2 / 10;
 	}
 	
+	.header-logo_name p {
+		font-size: 12px;
+	}
+	
+	.header-logo_name p:first-child {
+		font-weight: bold;
+	}
+	
+	.about-img {
+		margin: 15px;
+	}
+	
+	.about-img img {
+		width: 100%;
+		display: block;
+	}
+	
+	.about-me__title h3 {
+		font-size: 23px;
+		font-weight: bold;
+	}
+	
+	.title_second-line {
+		font-size: 33px;
+	}
+	
+	.title_third-line {
+		padding-left: 40px;
+	}
+	
+	.about-me__info {
+		margin: 20px 20px;
+	}
+	
+	.about-me__info p {
+		color: #4e4e4e;
+		line-height: 30px;
+		font-size: 17px;
+	}
+	
+	.about-me__info p:first-child {
+		padding-bottom: 15px;
+	}
+	
+	.about-me__info p:last-child {
+		display: none;
+	}
+	
+	.portfolio-title {
+		display: none;
+	}
+	
+	.portfolio-image_4,
+	.portfolio-image_5,
+	.portfolio-image_6 {
+		display: none;
+	}
+	
+	.portfolio-image_1 img,
+	.portfolio-image_2 img,
+	.portfolio-image_3 img {
+		display: block;
+		width: 100%;
+	}
+	
+	.portfolio-images {
+		 display: flex;
+		 flex-direction: column;
+	}
+	
+	.portfolio-image_1,
+	.portfolio-image_2, 
+	.portfolio-image_3 {
+		margin: 20px 15px 0 15px;
+	}
+	
+	.portfolio-btn {
+		display: none;
+	}	
+	
+	.portfolio-image_3 {
+		position: relative;
+	}
+	
+	.load-more {
+		position: absolute;
+		left: 0;
+		bottom: -10%;
+		width: 175px;
+		height: 60px;
+		background-color: #333333;
+		cursor: pointer;
+	}
+	
+	.load-more p {
+		padding: 15px 0 0 10px;
+		color: #fff;
+		font-size: 13px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+	.load-more span {
+		font-size: 11px;
+		font-weight: 300;
+		color: #fff;
+		padding-left: 10px;
+	}
+	
+	#testimonials {
+		display: none;
+	}
+	
+	#blog {
+		display: none;
+	}
+	
+	#contact {
+		margin-top: 60px;
+	}
+	
+	.contact-title h3 {
+		font-size: 23px;
+		font-weight: bold;
+	}
+	
+	.contact-title {
+		margin-bottom: 50px;
+	}
+	
+	.form input {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		width: 90%;
+		height: 40px;
+		background-color: #fff;
+		border: none;
+		border-bottom: 1px solid #979797;
+		font-size: 15px;
+		padding-left: 15px;
+		outline: none;
+		margin-bottom: 30px;
+		color: #696969;
+	}
+	
+	.form textarea {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		width: 90%;
+		height: 200px;
+		background-color: #fff;
+		border: none;
+		border-bottom: 1px solid #979797;
+		font-size: 15px;
+		padding-left: 15px;
+		outline: none;
+		margin-bottom: 30px;
+		color: #696969;
+	}
+	
+	.contact-me_btn {
+		color: #333;
+		text-align: center;
+		background-color: #fff;
+		padding: 15px 110px;
+		line-height: 0;
+		text-transform: uppercase;
+		transition-duration: 0.3s;
+	    cursor: pointer;
+		border: 1px solid #333;
+		border-radius: 20px;
+		outline: none;
+	}
+	
+	.contact-me_btn:hover {
+		background-color: #333;
+		color: #fff;
+	}
+	
+	.form-btn {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	footer {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 60px;
+	}
+	
+	.copy p{
+		font-size: 14px;
+		color: #696969;
+		margin-bottom: 20px
+	}
+	
+	.socials a{
+		margin-left: 40px;
+		cursor: pointer;
+	}
+	
+	.socials a:first-child {
+		margin-left: 0;
+	}
+	
+	.designed-by {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.designed-by p {
+		font-size: 14px;
+		color: #696969;
+	}
+	
 	
 }
 
@@ -203,59 +423,6 @@ time, mark, audio, video {
 
 
 
-
-/*@media only screen and ( min-device-width: 320px ) */
-/*and (max-device-width: 480px ) {*/
-/*    .header-nav,*/
-/*    .header-phone__number,*/
-/*    .contact-me-btn,*/
-/*    .header-image-2,*/
-/*    .header-image-3,*/
-/*    .header-image-6,*/
-/*    .header-image-7 { */
-/*        display: none;*/
-/*    }*/
- 
-/*	.header-grid-container img {*/
-/* 		 width: 100%;*/
-/* 		 border-radius: 40% 0 0 0;*/
-/*    }*/
-    
-/*    .header-grid-container {*/
-/*    	display: grid;*/
-/*		grid-template-rows: repeat(10, 1fr);*/
-/*		grid-template-columns: repeat(10, 1fr);*/
-
-/*    }*/
-    
-/*    .header-title {*/
-/*    	grid-column: 2 / 11;*/
-/*    	grid-row: 2 / 11;*/
-/*    	z-index: 4;*/
-/*    }*/
-    
-/*    .header-title__button {*/
-/*    	grid-column: 2 / 2;*/
-/*    	grid-row: 4 /5;*/
-/*    }*/
-    
-/*    .header-image-1 {*/
-/*    	grid-row: 7/11;*/
-/*    	grid-column: 3/11;*/
-/*    }*/
-    
-/*    .header-image-4 {*/
-/*    	grid-row: 5/9;*/
-/*    	grid-column: 5/11;*/
-/*		z-index: 1;*/
-/*    }*/
-    
-/*    .header-image-5 {*/
-/*    	grid-row: 3/6;*/
-/*    	grid-column: 8/11;*/
-/*		z-index: 2;*/
-/*    }*/
-/*}*/
 
 
 

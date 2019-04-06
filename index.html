@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="header-top main_flex__nowrap flex__jcontent_between">
-            <div class="header-logo main_flex">
+            <div class="header-logo main_flex flex__align-items_center">
                 <div class="header-logo_img">
                     <img src="img/header-logo.png" alt="main logo">
                 </div>
@@ -41,8 +41,8 @@
                 <h1>Anastasia Chibisova</h1>
             </div>
             <div class="header-title__button">
-                <button class="button portfolio-btn" type="button">portfolio</button>
-                <button class="button contact-me-btn" type="button">contact me</button>
+                <button class="button header-portfolio-btn" type="button">portfolio</button>
+                <button class="button header-contact-me-btn" type="button">contact me</button>
             </div>
             <div class="header-image-1">
                 <img src="img/header-photo1.png" alt="picture of a girl and man">
@@ -67,14 +67,14 @@
             </div>
         </div>
     </header>
-    <!--
+    
     <main>
         <section id="about">
             <div class="about-img">
                 <img src="img/about-img.jpg" alt="phorographer Anastasia">
             </div>
             <div class="about-me">
-                <div class="about-me__title">
+                <div class="about-me__title main_flex__nowrap flex__jcontent_center">
                     <h3>I'm an <br>
                     <span class="title_second-line">Experienced</span><br> 
                     <span class="title_third-line">photographer</span>
@@ -100,12 +100,28 @@
                 <h3>Latest photos</h3>
             </div>
             <div class="portfolio-images">
-                <img src="img/portfolio-photo1.jpg" alt="portfolio photo1">
-                <img src="img/portfolio-photo2.jpg" alt="portfolio photo2">
-                <img src="img/portfolio-photo3.jpg" alt="portfolio photo3">
-                <img src="img/portfolio-photo4.jpg" alt="portfolio photo4">
-                <img src="img/portfolio-photo5.jpg" alt="portfolio photo5">
-                <img src="img/portfolio-photo6.jpg" alt="portfolio photo6">
+                <div class="portfolio-image_1">
+                    <img src="img/portfolio-photo1.jpg" alt="portfolio photo1">
+                </div>
+                <div class="portfolio-image_2">
+                    <img src="img/portfolio-photo2.jpg" alt="portfolio photo2">
+                </div>
+                <div class="portfolio-image_3">
+                    <img src="img/portfolio-photo3.jpg" alt="portfolio photo3">
+                    <div class="load-more">
+                        <p>Load more</p>
+                        <span>Total 200</span>
+                    </div>
+                </div>
+                <div class="portfolio-image_4">
+                    <img src="img/portfolio-photo4.jpg" alt="portfolio photo4">
+                </div>
+                <div class="portfolio-image_5">
+                    <img src="img/portfolio-photo5.jpg" alt="portfolio photo5">
+                </div>
+                <div class="portfolio-image_6">
+                    <img src="img/portfolio-photo6.jpg" alt="portfolio photo6">
+                </div>
             </div>
             <div class="portfolio-btn">
                 <button>button</button>
@@ -159,38 +175,40 @@
             </div>
         </section>
         <section id="contact">
-            <div class="contact-title">
+            <div class="contact-title main_flex flex__jcontent_center">
                 <h3>Contact me</h3>
             </div>
             <div class="form">
                 <form>
                     <input type="text" class="name" name="name" placeholder="Your name"> 
                     <label>
-                        Email:<input type="email" class="email" name="email" placeholder="Your Email">
+                        <input type="email" class="email" name="email" placeholder="Your Email">
                     </label>
                     <br>
                     <label>
-                        Your message<textarea name="message"></textarea>
+                        <textarea name="message" placeholder="Your message"></textarea>
                     </label>
                     <br>
-                    <button>Submit</button>
                 </form>
+                <div class="form-btn main_flex flex__jcontent_center">
+                    <button class="contact-me_btn">Submit</button>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="copy">
-            © Anastasia Chibisova, 2019
+            <P>© Anastasia Chibisova, 2019</P>
         </div>
         <div class="socials">
-            <img src="img/facebook.svg" alt="facebook">
-            <img src="img/insta.svg" alt="instagram">
-            <img src="img/twitter.svg" alt="twitter">
+            <a href="http://facebook.com" target="_blank"><img src="img/facebook.svg"  alt="facebook"></a>
+            <a href="http://instagram.com" target="_blank"><img src="img/insta.svg" alt="instagram"></a>
+            <a href="http://twitter.com"target="_blank"><img src="img/twitter.svg" alt="twitter"></a>
         </div>
         <div class="designed-by">
-            Designed by <strong>Pavlo Zhydkykh</strong>
+            <p>Designed by <strong>Pavlo Zhydkykh</strong></p>
         </div>
     </footer>
-    -->
+    
 </body>
 </html>
