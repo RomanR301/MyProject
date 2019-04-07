@@ -2,6 +2,10 @@
     font-family: 'Libre Baskerville', serif;
 }
 
+.main_flex {
+    display: flex;
+}
+
 .blog-info svg {
     width: 15px;
     height: 15px;
