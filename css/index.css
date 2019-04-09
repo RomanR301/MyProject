@@ -1145,13 +1145,18 @@ footer {
 	}
 
 	.testimonials-by {
-		padding-bottom: 7px;
+		margin: 30px
 	}
 
 	.testimonials-by p {
 		color: #333333;
 	}
-
+	
+	.testimonials-socials {
+		display: flex;
+    	justify-content: center;
+	}
+	
 	.testimonials-socials img {
 		padding: 0 13px;
 	}
