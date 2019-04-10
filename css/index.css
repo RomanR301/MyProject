@@ -695,7 +695,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-
+	/*-----------------HEADER-------------------*/
 	.header-top {
 		width: 80%;
 		align-items: center;
@@ -806,7 +806,7 @@ footer {
 		grid-row: 4 / 10;
 		grid-column: 18 / 21;
 	}
-
+	/*-----------------ABOUT-------------------*/
 	#about {
 		margin-top: 50px;
 		width: 100%;
@@ -832,7 +832,7 @@ footer {
 	.about-me__info p:last-child {
 		display: block;
 	}
-
+	/*-----------------PORTFOLIO-------------------*/
 	.wrap {
 		width: 85vw;
 		max-width: 1200px;
@@ -899,17 +899,17 @@ footer {
 		grid-column: 7 / 10;
 		align-self: end;
 	}
-	
+
 	.portfolio-image_1:hover .image-container,
 	.portfolio-image_2:hover .image-container,
 	.portfolio-image_3:hover .image-container,
 	.portfolio-image_4:hover .image-container,
 	.portfolio-image_5:hover .image-container,
 	.portfolio-image_6:hover .image-container {
-	    display: block;
+		display: block;
 	}
-	
-	.portfolio-image_1, 
+
+	.portfolio-image_1,
 	.portfolio-image_2,
 	.portfolio-image_3,
 	.portfolio-image_4,
@@ -917,15 +917,15 @@ footer {
 	.portfolio-image_6 {
 		position: relative;
 	}
-	
+
 	.portfolio-image_1 .image-hover {
 		position: absolute;
 		left: 20%;
-	    top: 2%;
-	    width: 60%;
+		top: 2%;
+		width: 60%;
 		display: none;
 	}
-	
+
 	.portfolio-image_1:hover .image-hover,
 	.portfolio-image_2:hover .image-hover,
 	.portfolio-image_3:hover .image-hover,
@@ -934,9 +934,9 @@ footer {
 	.portfolio-image_6:hover .image-hover {
 		display: block;
 		cursor: pointer;
-		
+
 	}
-	
+
 	.portfolio-image_2 .image-hover {
 		position: absolute;
 		left: 5%;
@@ -944,7 +944,7 @@ footer {
 		width: 90%;
 		display: none;
 	}
-	
+
 	.portfolio-image_3 .image-hover {
 		position: absolute;
 		left: 5%;
@@ -952,7 +952,7 @@ footer {
 		width: 90%;
 		display: none;
 	}
-	
+
 	.portfolio-image_4 .image-hover {
 		position: absolute;
 		left: 5%;
@@ -960,79 +960,22 @@ footer {
 		width: 90%;
 		display: none;
 	}
-	
+
 	.portfolio-image_5 .image-hover {
 		position: absolute;
 		left: 5%;
-    	top: 7.5%;
+		top: 7.5%;
 		width: 90%;
 		display: none;
 	}
-	
+
 	.portfolio-image_6 .image-hover {
 		position: absolute;
 		left: 20%;
-	    top: 5.5%;
-	    width: 60%;
+		top: 5.5%;
+		width: 60%;
 		display: none;
 	}
-	
-	.modal {
-		display: none; /* Hidden by default */
-		position: fixed; /* Stay in place */
-		z-index: 1; /* Sit on top */
-		padding-top: 100px; /* Location of the box */
-		left: 0;
-		top: 0;
-		width: 100%; /* Full width */
-		height: 100%; /* Full height */
-		overflow: auto; /* Enable scroll if needed */
-		background-color: rgb(0,0,0); /* Fallback color */
-		background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-	}
-	
-	.modal-content {
-		margin: auto;
-		display: block;
-		width: 80%;
-		max-width: 700px;
-	}
-	
-	#caption {
-		margin: auto;
-		display: block;
-		width: 80%;
-		max-width: 700px;
-		text-align: center;
-		color: #ccc;
-		padding: 10px 0;
-		height: 150px;
-	}
-	
-	.modal-content, #caption {  
-	    animation-name: zoom;
-	    animation-duration: 0.6s;
-	}
-	
-	.close {
-	    position: absolute;
-	    top: 15px;
-	    right: 35px;
-	    color: #f1f1f1;
-	    font-size: 40px;
-	    font-weight: bold;
-	    transition: 0.3s;
-	}
-
-	.close:hover,
-	.close:focus {
-	    color: #bbb;
-	    text-decoration: none;
-	    cursor: pointer;
-	}
-
-
-
 
 	.load-more {
 		display: none;
@@ -1095,7 +1038,7 @@ footer {
 		flex-direction: column;
 		align-items: center;
 	}
-
+	/*-----------------TESTIMONIALS-------------------*/
 	#testimonials {
 		display: block;
 		margin-top: 40px;
@@ -1108,20 +1051,20 @@ footer {
 		align-items: center;
 		position: relative;
 	}
-	
+
 	.quote-left {
 		position: absolute;
 		top: 65px;
-    	left: 85px;
+		left: 85px;
 	}
-	
+
 	.quote-right {
 		position: absolute;
 		bottom: 75px;
-    	right: 80px;
+		right: 80px;
 	}
 
-	
+
 	.testimonials-testimonial {
 		text-align: center;
 		width: 75%;
@@ -1151,22 +1094,22 @@ footer {
 	.testimonials-by p {
 		color: #333333;
 	}
-	
+
 	.testimonials-socials {
 		display: flex;
-    	justify-content: center;
+		justify-content: center;
 	}
-	
+
 	.testimonials-socials img {
 		padding: 0 13px;
 	}
-	
+
 	.slide_item1,
 	.slide_item2,
 	.slide_item3 {
 		outline: none;
 	}
-
+	/*-----------------BLOG-------------------*/
 	#blog {
 		display: block;
 	}
@@ -1210,7 +1153,7 @@ footer {
 		display: flex;
 		flex-direction: row-reverse;
 	}
-
+	/*-----------------CONTACT-------------------*/
 	.contact-title h3 {
 		font-size: 40px;
 		font-weight: 700;
@@ -1228,6 +1171,7 @@ footer {
 		width: 50%;
 	}
 
+
 	.form textarea {
 		width: 95%;
 		height: 100px;
@@ -1242,7 +1186,7 @@ footer {
 	.contact-me_btn {
 		padding: 15px 35px;
 	}
-	
+	/*-----------------MODAL-------------------*/
 	.black_fill {
 		width: 100%;
 		height: 100vh;
@@ -1252,32 +1196,32 @@ footer {
 		z-index: 100;
 		background-color: rgba(0, 0, 0, 0.8);
 	}
-	
+
 	.modal_box {
 		position: fixed;
 		top: 20vh;
-		width: 50vw;
+		width: 40vw;
 		left: calc(50% - 25vw);
 		z-index: 110;
 	}
-	
-	.content_model {
+
+	.content_modal {
 		width: 100%;
 		background-color: #fff;
 		padding: 10%;
 	}
-	
+
 	.close_modal {
 		width: 2vw;
 		height: 2vw;
 		fill: #fff;
 		position: absolute;
 		top: -4vw;
-		right: -4vw;
+		right: -12vw;
 		cursor: pointer;
 	}
-	
-	.modal_box, 
+
+	.modal_box,
 	.black_fill {
 		display: none;
 	}
@@ -1350,4 +1294,3 @@ footer {
 		padding-right: 150px
 	}
 }
-

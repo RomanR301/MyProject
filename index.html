@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-------------HEADER-------------->
     <header>
         <div class="header-top main_flex__nowrap flex__jcontent_between">
             <div class="header-logo main_flex flex__align-items_center">
@@ -79,7 +80,7 @@
 
     </header>
 
-
+    <!-------------MAIN-------------->
     <main>
         <div class="wrap">
             <section id="about">
@@ -107,6 +108,7 @@
         </div>
         <div class="line"></div>
         <div class="wrap">
+            <!-------------PORTFOLIO-------------->
             <section id="portfolio">
                 <div class="portfolio-title">
                     <h3>Latest photos</h3>
@@ -171,6 +173,7 @@
             </section>
         </div>
         <div class="line"></div>
+        <!-------------TESTIMONIALS-------------->
         <section id="testimonials">
             <div class="wrap">
                 <div class="testimonials-title">
@@ -222,6 +225,7 @@
             </div>
         </section>
         <div class="line"></div>
+        <!-------------BLOG-------------->
         <section id="blog">
             <div class="wrap">
                 <div class="blog-title">
@@ -250,30 +254,32 @@
                 </div>
             </div>
         </section>
+        <!-------------CONTACT-------------->
         <section id="contact">
             <div class="wrap">
                 <div class="contact-title main_flex flex__jcontent_center">
                     <h3>Contact me</h3>
                 </div>
                 <div class="form">
-                    <form>
+                    <form id="form">
                         <div class="form-line1">
                             <div class="input-container">
-                                <input type="text" class="name" name="name" placeholder="Your name">
+                                <input type="text" class="name" name="name" placeholder="Your name" required>
                             </div>
                             <div class="input-container">
-                                <input type="email" class="email" name="email" placeholder="Your Email">
+                                <input type="email" class="email" name="email" placeholder="Your Email" required>
                             </div>
                         </div>
-                        <textarea name="message" placeholder="Your message"></textarea>
+                        <textarea name="message" placeholder="Your message" required></textarea>
                     </form>
                     <div class="form-btn main_flex flex__jcontent_center">
-                        <button class="contact-me_btn">Submit</button>
+                        <button class="contact-me_btn" form="form">Submit</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <!-------------FOOTER-------------->
     <footer>
         <div class="wrap">
             <div class="footer-container">
@@ -292,7 +298,7 @@
         </div>
     </footer>
 
-
+    <!-------------MODAL-------------->
     <div class="modal_box">
         <div class="close_modal">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.112 31.112" style="enable-background:new 0 0 31.112 31.112;" xml:space="preserve">
@@ -303,7 +309,7 @@
         </div>
         <div class="content_modal">
             <div class="form">
-                <form>
+                <form id="data">
                     <div class="form-line1">
                         <div class="input-container">
                             <input type="text" class="name" name="name" placeholder="Your name" required>
@@ -315,7 +321,7 @@
                     <textarea name="message" placeholder="Your message" required></textarea>
                 </form>
                 <div class="form-btn main_flex flex__jcontent_center">
-                    <button type="submit" class="contact-me_btn">Send a message</button>
+                    <button type="submit" class="contact-me_btn" form="data">Send a message</button>
                 </div>
             </div>
         </div>
