@@ -1,19 +1,31 @@
-// const galeryModal = document.getElementById('myModal');
-// const galeryImg = document.querySelectorAll('.portfolio-img');
-// const modalImg = document.getElementById('img01');
-// const captionText = document.getElementById('caption');
 
-// galeryImg.onclick = function(){
-//   galeryModal.style.display = "block";
-//   modalImg.src = this.src;
-//   captionText.innerHTML = this.alt;
-// }
-
-// const span = document.getElementsByClassName("close")[0];
-
-// span.onclick = function() { 
-//   galeryModal.style.display = "none";
-// } 
-// ЗАПИТАТИ В СЕРЕДУ
-
-
+$(function(){
+    
+    'use strict';
+    
+    $('a[href^="#"]').click(function(){
+        let target = $(this).attr('href');
+        $('html, body').animate(
+            {
+                scrollTop:$(target).offset().top
+            },
+            800
+        );
+    });
+    
+    
+    $('#slide').slick({
+        autoplay: true,
+        autoplayspeed: 2500,
+    });
+    
+    
+    $('.modal_box, .black_fill').hide();
+    $('.header-contact-me-btn').click(function(){
+        $('.modal_box, .black_fill').show();
+    });
+    
+    $('.close_modal, .black_fill').click(function() {
+        $('.modal_box, .black_fill').hide();
+    })
+});

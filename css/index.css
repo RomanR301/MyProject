@@ -1160,6 +1160,12 @@ footer {
 	.testimonials-socials img {
 		padding: 0 13px;
 	}
+	
+	.slide_item1,
+	.slide_item2,
+	.slide_item3 {
+		outline: none;
+	}
 
 	#blog {
 		display: block;
@@ -1236,6 +1242,45 @@ footer {
 	.contact-me_btn {
 		padding: 15px 35px;
 	}
+	
+	.black_fill {
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	
+	.modal_box {
+		position: fixed;
+		top: 20vh;
+		width: 50vw;
+		left: calc(50% - 25vw);
+		z-index: 110;
+	}
+	
+	.content_model {
+		width: 100%;
+		background-color: #fff;
+		padding: 10%;
+	}
+	
+	.close_modal {
+		width: 2vw;
+		height: 2vw;
+		fill: #fff;
+		position: absolute;
+		top: -4vw;
+		right: -4vw;
+		cursor: pointer;
+	}
+	
+	.modal_box, 
+	.black_fill {
+		display: none;
+	}
 
 }
 
@@ -1305,3 +1350,4 @@ footer {
 		padding-right: 150px
 	}
 }
+
