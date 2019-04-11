@@ -433,6 +433,7 @@ header {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
+	font-family: 'Libre Baskerville', serif;
 	width: 90%;
 	height: 200px;
 	background-color: #fff;
@@ -1098,6 +1099,10 @@ footer {
 	.testimonials-socials {
 		display: flex;
 		justify-content: center;
+	}
+	
+	.testimonials-socials  a {
+		outline: none;
 	}
 
 	.testimonials-socials img {

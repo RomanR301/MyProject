@@ -27,5 +27,8 @@ $(function(){
     
     $('.close_modal, .black_fill').click(function() {
         $('.modal_box, .black_fill').hide();
-    })
+    });
+    
+    
+    
 });
