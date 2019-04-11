@@ -704,20 +704,52 @@ footer {
 
 	.header-nav {
 		display: flex;
+		width: 53%;
+   	 	justify-content: space-around;
+   	 	padding-top: 10px;
 	}
 
 	.header-nav a {
 		padding: 0 15px;
-		color: #888888;
+		color: #333333;
 		text-decoration: none;
 		font-size: 12px;
 	}
-
-	.header-nav a:hover {
-		text-decoration: underline;
+	
+	.nav-hover {
+		height: 5px;
+	    top: 0;
+	    border-top: 3px solid black;
+	    position: absolute;
 	}
+	
+	.nav-hover_home {
+	    width: 5.1%;
+	    left: 21.7%;
+	    display: none;
+	}
+	
+	.nav-hover_portfolio {
+		left: 30.9%;
+	    width: 7.7%;
+	    display: none;
+	}
+	
+	.nav-hover_blog {
+		width: 4.5%;
+	    left: 42.3%;
+	    display: none;
+	}
+	
+	.nav-hover_contact {
+	    width: 9.6%;
+	    left: 50.4%;
+	    display: none;
+	}
+	
 
 	.header-phone {
+		padding-top: 10px;
 		display: flex;
 		align-items: center;
 	}
@@ -1234,6 +1266,26 @@ footer {
 }
 
 @media (min-width: 1080px) {
+	.nav-hover_home {
+		width: 4.1%;
+   	 	left: 22%;
+	}
+	
+	.nav-hover_portfolio {
+		left: 31.7%;
+    	width: 5.7%;
+	}
+	
+	.nav-hover_blog {
+		width: 3.2%;
+    	left: 42.9%;
+	}
+	
+	.nav-hover_contact {
+		width: 6.9%;
+    	left: 51.7%;
+	}
+	
 	.header-title {
 		grid-row: 7 / 9;
 		grid-column: 3 / 21;
