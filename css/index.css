@@ -216,7 +216,7 @@ span:after {
 	background-color: #333333;
 	position: absolute;
 	right: 4%;
-    top: 3.2%;
+	top: 3.2%;
 }
 
 .menu-link span:before {
@@ -286,10 +286,6 @@ span:after {
 	text-decoration: none;
 	line-height: 5;
 	font-size: 18px;
-}
-
-.menu a:hover {
-	color: tomato;
 }
 
 .burger-socials {
