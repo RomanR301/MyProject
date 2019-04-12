@@ -285,6 +285,11 @@ span:after {
 	color: #333;
 	text-decoration: none;
 	line-height: 5;
+	font-size: 18px;
+}
+
+.menu a:hover {
+	color: tomato;
 }
 
 .burger-socials {
