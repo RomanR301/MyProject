@@ -200,8 +200,100 @@ button:hover {
 	padding-right: 20px;
 }
 
+
+.menu-link {
+	display: block;
+	width: 35px;
+	height: 35px;
+}
+
+.menu-link span,
+span:before,
+span:after {
+	display: block;
+	height: 2px;
+	width: 15px;
+	background-color: #333333;
+	position: absolute;
+	right: 4%;
+    top: 3.2%;
+}
+
+.menu-link span:before {
+	transition: all 0.2s;
+	width: 8px;
+	content: '';
+	margin-top: 5px;
+}
+
+.menu-link span:after {
+	transition: all 0.2s;
+	width: 22px;
+	content: '';
+	margin-top: -5px;
+	height: 2px;
+}
+
+.menu-link_active span {
+	background-color: transparent;
+}
+
+.menu-link_active span:before {
+	transform: rotate(135deg);
+	width: 18px;
+	margin-top: 0;
+}
+
+.menu-link_active span:after {
+	transform: rotate(-135deg);
+	width: 18px;
+	margin-top: 0;
+}
+
+.burger-menu {
+	background-color: #fff;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+	transition: all 0.5s;
+	right: -100vw;
+}
+
+.burger-menu_active {
+	background-color: #fff;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+	transition: all 0.5s;
+	left: 0;
+}
+
+.menu {
+	list-style: none;
+	margin-left: 15px;
+	margin-top: 80px;
+}
+
+
+.menu li:last-child {
+	margin-bottom: 80px;
+}
+
+.menu a {
+	color: #333;
+	text-decoration: none;
+	line-height: 5;
+}
+
+.burger-socials {
+	display: flex;
+	justify-content: space-around;
+}
+
 .header-nav,
-.header-phone__number,
+.header-phone,
 .header-contact-me-btn,
 .header-image-2,
 .header-image-3,
@@ -705,8 +797,8 @@ footer {
 	.header-nav {
 		display: flex;
 		width: 53%;
-   	 	justify-content: space-around;
-   	 	padding-top: 10px;
+		justify-content: space-around;
+		padding-top: 10px;
 	}
 
 	.header-nav a {
@@ -715,38 +807,39 @@ footer {
 		text-decoration: none;
 		font-size: 12px;
 	}
-	
+
 	.nav-hover {
 		height: 5px;
-	    top: 0;
-	    border-top: 3px solid black;
-	    position: absolute;
+		top: 0;
+		border-top: 3px solid black;
+		position: absolute;
+		display: none;
 	}
-	
+
 	.nav-hover_home {
-	    width: 5.1%;
-	    left: 21.7%;
-	    display: none;
+		width: 5.1%;
+		left: 21.7%;
+		display: none;
 	}
-	
+
 	.nav-hover_portfolio {
 		left: 30.9%;
-	    width: 7.7%;
-	    display: none;
+		width: 7.7%;
+		display: none;
 	}
-	
+
 	.nav-hover_blog {
 		width: 4.5%;
-	    left: 42.3%;
-	    display: none;
+		left: 42.3%;
+		display: none;
 	}
-	
+
 	.nav-hover_contact {
-	    width: 9.6%;
-	    left: 50.4%;
-	    display: none;
+		width: 9.6%;
+		left: 50.4%;
+		display: none;
 	}
-	
+
 
 	.header-phone {
 		padding-top: 10px;
@@ -759,6 +852,16 @@ footer {
 		color: #888888;
 		margin-left: 13px;
 	}
+
+	.burger,
+	.burger-menu {
+		display: none;
+	}
+
+
+
+
+
 
 	.header-contact-me-btn,
 	.header-image-2,
@@ -1132,8 +1235,8 @@ footer {
 		display: flex;
 		justify-content: center;
 	}
-	
-	.testimonials-socials  a {
+
+	.testimonials-socials a {
 		outline: none;
 	}
 
@@ -1268,24 +1371,24 @@ footer {
 @media (min-width: 1080px) {
 	.nav-hover_home {
 		width: 4.1%;
-   	 	left: 22%;
+		left: 22%;
 	}
-	
+
 	.nav-hover_portfolio {
 		left: 31.7%;
-    	width: 5.7%;
+		width: 5.7%;
 	}
-	
+
 	.nav-hover_blog {
 		width: 3.2%;
-    	left: 42.9%;
+		left: 42.9%;
 	}
-	
+
 	.nav-hover_contact {
 		width: 6.9%;
-    	left: 51.7%;
+		left: 51.7%;
 	}
-	
+
 	.header-title {
 		grid-row: 7 / 9;
 		grid-column: 3 / 21;
