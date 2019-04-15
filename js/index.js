@@ -14,7 +14,7 @@ $(function() {
 
     $('#slide').slick({
         autoplay: true,
-        autoplayspeed: 2500,
+        autoplayspeed: 2400,
     });
 
 
